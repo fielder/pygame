@@ -1,0 +1,15 @@
+Simple little test to see if I can get pygame working with a small
+library coded in C to access the draw buffer directly.
+
+When running, hit "f" to show the framerate. Escape to quit.
+
+Requirements:
+  pygame
+  numpy
+
+Build:
+  gcc -c -Wall -O2 -fPIC c_drawer.c
+  gcc -shared c_drawer.o -o c_drawer.so
+
+Run:
+  python pyg_c.py 
